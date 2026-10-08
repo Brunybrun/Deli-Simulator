@@ -14,7 +14,14 @@ public class AiMovement : MonoBehaviour
     void Update()
     {
         Vector3 vel = new Vector3(0, RB.linearVelocity.y, 0);
-        vel += transform.forward * Speed;
-        RB.linearVelocity = vel;
+        if (RB.position.z < 10) {
+            vel += transform.forward * Speed;
+            RB.linearVelocity = vel;
+        }
+        /*if (RB.position.z > 10)
+        {
+            vel += transform.forward * Speed;
+            RB.linearVelocity = vel;
+        }*/
     }
 }
