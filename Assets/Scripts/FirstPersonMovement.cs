@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class FirstPersonMovement : MonoBehaviour
 {
-    public Rigidbody RB;
+    Rigidbody RB;
     public int Speed = 3;
     public Camera Eyes;
     public float MSensitivity = 1;
@@ -12,6 +12,7 @@ public class FirstPersonMovement : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        RB = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
