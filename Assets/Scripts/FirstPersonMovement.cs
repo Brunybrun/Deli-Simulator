@@ -31,6 +31,8 @@ public class FirstPersonMovement : MonoBehaviour
             vel += transform.right * Speed;
         if (Keyboard.current.aKey.isPressed)
             vel += transform.right * -Speed;
+        if (Keyboard.current.wKey.isPressed && Keyboard.current.shiftKey.isPressed)
+            vel += transform.forward * (Speed+1);
         RB.linearVelocity = vel;
 
     }
