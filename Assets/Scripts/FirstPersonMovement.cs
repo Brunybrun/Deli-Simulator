@@ -39,7 +39,7 @@ public class FirstPersonMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if(Physics.Raycast(Eyes.transform.position, Eyes.transform.forward, out RaycastHit hit, 10))
+            if(Physics.Raycast(Eyes.transform.position, Eyes.transform.forward, out RaycastHit hit, 2))
             {
                 Debug.Log(hit.collider.gameObject.name);
             }
