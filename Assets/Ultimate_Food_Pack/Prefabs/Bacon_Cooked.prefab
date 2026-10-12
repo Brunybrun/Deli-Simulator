@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4296967292035155387, guid: ab653db2c9f4049ada3896888a5dad40, type: 3}
+      propertyPath: m_TagString
+      value: Cooked
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ab653db2c9f4049ada3896888a5dad40, type: 3}
       propertyPath: m_Name
       value: Bacon_Cooked
@@ -64,6 +68,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d890ab0e1656f4ec68a10d7e3d69ba35, type: 2}
+    - target: {fileID: 3992435673097016650, guid: ab653db2c9f4049ada3896888a5dad40, type: 3}
+      propertyPath: m_TagString
+      value: Cooked
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918151451462514725, guid: ab653db2c9f4049ada3896888a5dad40, type: 3}
+      propertyPath: m_TagString
+      value: Cooked
+      objectReference: {fileID: 0}
+    - target: {fileID: 7470519073293696510, guid: ab653db2c9f4049ada3896888a5dad40, type: 3}
+      propertyPath: m_TagString
+      value: Cooked
+      objectReference: {fileID: 0}
     - target: {fileID: 8249215230392634667, guid: ab653db2c9f4049ada3896888a5dad40, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 

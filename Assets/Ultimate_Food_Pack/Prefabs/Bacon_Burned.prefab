@@ -56,9 +56,25 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 6967e92d280844f119fa1d0d52714e89, type: 2}
+    - target: {fileID: -4208423564643354451, guid: 125f8259fe6f94a9c960ad8b90dc58d5, type: 3}
+      propertyPath: m_TagString
+      value: Burned
+      objectReference: {fileID: 0}
+    - target: {fileID: -2442945229501970872, guid: 125f8259fe6f94a9c960ad8b90dc58d5, type: 3}
+      propertyPath: m_TagString
+      value: Burned
+      objectReference: {fileID: 0}
+    - target: {fileID: -1053951038196364376, guid: 125f8259fe6f94a9c960ad8b90dc58d5, type: 3}
+      propertyPath: m_TagString
+      value: Burned
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 125f8259fe6f94a9c960ad8b90dc58d5, type: 3}
       propertyPath: m_Name
       value: Bacon_Burned
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 125f8259fe6f94a9c960ad8b90dc58d5, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7682057076490173767, guid: 125f8259fe6f94a9c960ad8b90dc58d5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

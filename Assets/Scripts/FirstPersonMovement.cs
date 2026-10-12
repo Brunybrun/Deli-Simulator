@@ -5,12 +5,13 @@ public class FirstPersonMovement : MonoBehaviour
 {
     Rigidbody RB;
     public int Speed = 3;
-    public Camera Eyes;
+    public static Camera Eyes;
     public float MSensitivity = 1;
     Ray ray;
 
     void Start()
     {
+        Eyes = Camera.main;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         RB = GetComponent<Rigidbody>();
@@ -36,14 +37,6 @@ public class FirstPersonMovement : MonoBehaviour
         if (Keyboard.current.wKey.isPressed && Keyboard.current.shiftKey.isPressed)
             vel += transform.forward * (Speed+1);
         RB.linearVelocity = vel;
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            if(Physics.Raycast(Eyes.transform.position, Eyes.transform.forward, out RaycastHit hit, 2))
-            {
-                Debug.Log(hit.collider.gameObject.name);
-            }
-        }
 
     }
 }
