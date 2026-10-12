@@ -7,7 +7,8 @@ public class FirstPersonMovement : MonoBehaviour
     public int Speed = 3;
     public Camera Eyes;
     public float MSensitivity = 1;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    Ray ray;
+
     void Start()
     {
         Cursor.visible = false;
@@ -15,13 +16,14 @@ public class FirstPersonMovement : MonoBehaviour
         RB = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //Camera Controls
         Vector2 mouse = Mouse.current.delta.ReadValue();
         transform.Rotate(0, mouse.x * MSensitivity, 0);
         Eyes.transform.Rotate(mouse.y * MSensitivity * -1, 0, 0);
 
+        //Keyboard controls
         Vector3 vel = new Vector3(0, RB.linearVelocity.y, 0);
         if (Keyboard.current.wKey.isPressed)
             vel += transform.forward * Speed;
@@ -34,6 +36,14 @@ public class FirstPersonMovement : MonoBehaviour
         if (Keyboard.current.wKey.isPressed && Keyboard.current.shiftKey.isPressed)
             vel += transform.forward * (Speed+1);
         RB.linearVelocity = vel;
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if(Physics.Raycast(Eyes.transform.position, Eyes.transform.forward, out RaycastHit hit, 10))
+            {
+                Debug.Log(hit.collider.gameObject.name);
+            }
+        }
 
     }
 }
