@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class Burned : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -19,6 +18,8 @@ public class Burned : MonoBehaviour
                 if (hit.collider.gameObject.tag == "Burned")
                 {
                     Destroy(transform.parent.gameObject);
+                    GameManager.baconTimeLeft = GameManager.baconTimer;
+                    Cooking.spawnBacon = true;
                 }
             }
         }

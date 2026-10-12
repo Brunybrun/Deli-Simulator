@@ -9,6 +9,7 @@ TagManager:
   - Uncooked
   - Burned
   - Cooked
+  - Station
   layers:
   - Default
   - TransparentFX

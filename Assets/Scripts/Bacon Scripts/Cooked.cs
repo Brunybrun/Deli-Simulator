@@ -5,12 +5,16 @@ public class Cooked : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Destroy(gameObject, 11f);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.baconTimeLeft <= 0)
+        {
+            Destroy(gameObject);
+        }
         if (Input.GetMouseButtonDown(0))
         {
             if (Physics.Raycast(FirstPersonMovement.Eyes.transform.position, FirstPersonMovement.Eyes.transform.forward, out RaycastHit hit, 2))
@@ -19,6 +23,8 @@ public class Cooked : MonoBehaviour
                 if (hit.collider.gameObject.tag == "Cooked")
                 {
                     Destroy(transform.parent.gameObject);
+                    GameManager.baconTimeLeft = GameManager.baconTimer;
+                    Cooking.spawnBacon = true;
                 }
             }
         }

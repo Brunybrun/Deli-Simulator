@@ -7,7 +7,6 @@ public class FirstPersonMovement : MonoBehaviour
     public int Speed = 3;
     public static Camera Eyes;
     public float MSensitivity = 1;
-    Ray ray;
 
     void Start()
     {
@@ -34,6 +33,8 @@ public class FirstPersonMovement : MonoBehaviour
             vel += transform.right * Speed;
         if (Keyboard.current.aKey.isPressed)
             vel += transform.right * -Speed;
+
+        //Sprinting
         if (Keyboard.current.wKey.isPressed && Keyboard.current.shiftKey.isPressed)
             vel += transform.forward * (Speed+1);
         RB.linearVelocity = vel;
