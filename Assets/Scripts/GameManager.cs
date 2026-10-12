@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public static bool move = true;
     public static float baconTimer = 30f;
     public static float baconTimeLeft = baconTimer;
+    public static float eggTimer = 30f;
+    public static float eggTimeLeft = eggTimer;
     public static Vector3 target1 = new Vector3(10, 0.5f, 6);
     public static Vector3 target2 = new Vector3(2, 0.5f, 2);
     public static Vector3 target3 = new Vector3(5, 0.5f, -3);

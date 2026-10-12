@@ -52,6 +52,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 94c4b6109bd63478aa6f0b5aaff5bc2d, type: 2}
+    - target: {fileID: -3658847752212868203, guid: 4951e49284b7948ddaeb6a25a334d6d4, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: -3284142069795497069, guid: 4951e49284b7948ddaeb6a25a334d6d4, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4951e49284b7948ddaeb6a25a334d6d4, type: 3}
       propertyPath: m_Name
       value: Egg_Fried
