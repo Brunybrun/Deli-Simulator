@@ -8,9 +8,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 110825933079500082, guid: b25cf307b6f1f4beea0f2778e241d1fa, type: 3}
+      propertyPath: m_TagString
+      value: Item7
+      objectReference: {fileID: 0}
     - target: {fileID: 2516136352354938701, guid: b25cf307b6f1f4beea0f2778e241d1fa, type: 3}
       propertyPath: m_Name
       value: item7 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2516136352354938701, guid: b25cf307b6f1f4beea0f2778e241d1fa, type: 3}
+      propertyPath: m_TagString
+      value: Item7
       objectReference: {fileID: 0}
     - target: {fileID: 2999621664718747127, guid: b25cf307b6f1f4beea0f2778e241d1fa, type: 3}
       propertyPath: m_LocalScale.x

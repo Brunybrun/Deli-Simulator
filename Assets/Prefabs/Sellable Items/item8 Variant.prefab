@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: item8 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2344566372888646817, guid: e9987b746aa884830ab6e4340aa2abcb, type: 3}
+      propertyPath: m_TagString
+      value: Item8
+      objectReference: {fileID: 0}
     - target: {fileID: 3153155382154284571, guid: e9987b746aa884830ab6e4340aa2abcb, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.4
@@ -67,6 +71,14 @@ PrefabInstance:
     - target: {fileID: 3153155382154284571, guid: e9987b746aa884830ab6e4340aa2abcb, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629659618807334753, guid: e9987b746aa884830ab6e4340aa2abcb, type: 3}
+      propertyPath: m_TagString
+      value: Item8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768603459755050756, guid: e9987b746aa884830ab6e4340aa2abcb, type: 3}
+      propertyPath: m_TagString
+      value: Item8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

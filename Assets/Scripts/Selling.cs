@@ -38,20 +38,20 @@ public class Selling : MonoBehaviour
 
                 //Spawn in the random items
                 int x1 = Random.Range(0, item.Length);
-                Vector3 randomItemSpawn1 = new Vector3(Random.Range(10.6f, 13.3f), 1.075f, Random.Range(-3.749f, -3.222f));
+                Vector3 randomItemSpawn1 = new Vector3(Random.Range(10.6f, 13.3f), 0.8f, Random.Range(-3.749f, -3.222f));
                 int x2 = Random.Range(0, item.Length);
                 //The while loops are there so that there's no two of the same item
                 while (x1 == x2)
                 {
                     x2 = Random.Range(0, item.Length);
                 }
-                Vector3 randomItemSpawn2 = new Vector3(Random.Range(10.6f, 13.3f), 1.075f, Random.Range(-3.749f, -3.222f));
+                Vector3 randomItemSpawn2 = new Vector3(Random.Range(10.6f, 13.3f), 0.8f, Random.Range(-3.749f, -3.222f));
                 int x3 = Random.Range(0, item.Length);
                 while (x1 == x3 || x2 == x3)
                 {
                     x3 = Random.Range(0, item.Length);
                 }
-                Vector3 randomItemSpawn3 = new Vector3(Random.Range(10.6f, 13.3f), 1.075f, Random.Range(-3.749f, -3.222f));
+                Vector3 randomItemSpawn3 = new Vector3(Random.Range(10.6f, 13.3f), 0.8f, Random.Range(-3.749f, -3.222f));
                 Instantiate(item[x1], randomItemSpawn1, Quaternion.identity);
                 Instantiate(item[x2], randomItemSpawn2, Quaternion.identity);
                 Instantiate(item[x3], randomItemSpawn3, Quaternion.identity);

@@ -8,9 +8,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 870619913946395182, guid: 01574537b24e64211be1e246a0c80ffc, type: 3}
+      propertyPath: m_TagString
+      value: Item4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2241409936963122182, guid: 01574537b24e64211be1e246a0c80ffc, type: 3}
+      propertyPath: m_TagString
+      value: Item4
+      objectReference: {fileID: 0}
     - target: {fileID: 5973229874916925549, guid: 01574537b24e64211be1e246a0c80ffc, type: 3}
       propertyPath: m_Name
       value: item4 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973229874916925549, guid: 01574537b24e64211be1e246a0c80ffc, type: 3}
+      propertyPath: m_TagString
+      value: Item4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408078424978208416, guid: 01574537b24e64211be1e246a0c80ffc, type: 3}
+      propertyPath: m_TagString
+      value: Item4
       objectReference: {fileID: 0}
     - target: {fileID: 6462379870933285591, guid: 01574537b24e64211be1e246a0c80ffc, type: 3}
       propertyPath: m_LocalScale.x
