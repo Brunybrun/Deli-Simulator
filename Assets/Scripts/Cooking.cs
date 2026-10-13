@@ -5,11 +5,13 @@ public class Cooking : MonoBehaviour
     public GameObject bacon;
     public GameObject egg;
     public GameObject sandwich;
+    public GameObject unfinSandwich;
     public GameObject s_bacon;
     public GameObject s_egg;
     public static bool spawnBacon = true;
     public static bool spawnEgg = true;
     public static int spawnCheese = 0;
+    public static bool spawnUnfinSandwich = true;
     public static bool spawn_s_bacon = false;
     public static bool spawn_s_egg = false;
 
@@ -62,13 +64,20 @@ public class Cooking : MonoBehaviour
                     //Turns spawnBacon false so that only one piece of bacon can be spawned
                     if (hit.collider.gameObject.tag == "Station2")
                     {
-                        Vector3 sandwichSpawn = new Vector3(4.928f, 0.511f, -7.236f);
+                        Vector3 sandwichSpawn = new Vector3(5.022f, 0.5f, -7.297f);
                         Instantiate(sandwich, sandwichSpawn, Quaternion.identity);
                         spawnCheese = 0;
                         GameManager.sandwichDone = true;
                     }
                 }
             }
+        }
+
+        if (spawnUnfinSandwich)
+        {
+            Vector3 unFinSandwichSpawn = new Vector3(4.928f, 0.433f, -7.236f);
+            Instantiate(unfinSandwich, unFinSandwichSpawn, Quaternion.identity);
+            spawnUnfinSandwich = false;
         }
 
         //Once spawnBacon turns false, a timer starts, signifying that the bacon is cooking
