@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,4 +17,11 @@ public class GameManager : MonoBehaviour
     public static Vector3 target1 = new Vector3(10, 0.5f, 6);
     public static Vector3 target2 = new Vector3(2, 0.5f, 2);
     public static Vector3 target3 = new Vector3(5, 0.5f, -3);
+    static public int sandwichesLeft = 5;
+    [SerializeField] TextMeshProUGUI sandwichNum;
+
+    void Update()
+    {
+        sandwichNum.text = sandwichesLeft.ToString();
+    }
 }
