@@ -12,6 +12,10 @@ TagManager:
   - Station
   - Station1
   - Station2
+  - Sandwich
+  - Item0
+  - Item1
+  - Item2
   layers:
   - Default
   - TransparentFX
