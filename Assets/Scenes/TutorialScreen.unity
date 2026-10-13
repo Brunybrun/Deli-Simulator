@@ -940,38 +940,41 @@ MonoBehaviour:
     are some things to keep an eye out for.
 
     You must be a cashier as well as
-    be a cook !
+    be a cook ! (Move with WASD)
 
     Cashier:
 
-    -In order to ring out the customers, all you need
-    to do is click on the items.
+    -In order to ring out the customers,
+    all you need to do is click on the items.
 
-    -Don''t take too long however, as the customers
-    will get impatient and steal some items
+    -Don''t take too long however,
+    as the customers will get impatient and steal some items
 
     Cook:
 
-    -You must be able to
-    cook bacon egg and cheeses, as that''s the main money source.
+    -You
+    must be able to cook bacon egg and cheeses, as that''s the main money source.
 
-    -The bacon,
-    egg, and cheeses have their own station where you can click on to start cooking
-    them
+    -The
+    bacon, egg, and cheeses have their own station where you can click on to start
+    cooking them
 
-    -Both eggs and bacon will be cooked through 4 stages: Raw, Half Cooked,
-    Fully Cooked, Burnt
+    -Both eggs and bacon will be cooked through 4 stages: Raw,
+    Half Cooked, Fully Cooked, Burnt
 
-    -Both the eggs and bacon can be put on the sandwich
-    at the fully cooked stage, however don''t let them get burnt!
+    -Both the eggs and bacon can be put on
+    the sandwich at the fully cooked stage, however don''t let them get burnt!
 
-    -Once the
-    egg and bacon are on the sandwich, the cheese can be put on top of them, and
-    the sandwich can be completed by clicking on the sandwich
+    -Egg
+    are faster to cook than bacon
+
+    -Once the egg and bacon are on the sandwich,
+    the cheese can be put on top of them, and the sandwich can be completed by clicking
+    on the sandwich
 
 
-    You have 5 minutes,
-    try to get the most amount of money you can,
+    You have 5 minutes, try to get the most amount of money
+    you can,
 
     and don''t go in debt !'
   m_isRightToLeft: 0
@@ -1000,8 +1003,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 47
+  m_fontSizeBase: 47
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
