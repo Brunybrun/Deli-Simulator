@@ -8,7 +8,7 @@ public class item0 : MonoBehaviour
         {
             if (Physics.Raycast(FirstPersonMovement.Eyes.transform.position, FirstPersonMovement.Eyes.transform.forward, out RaycastHit hit, 2))
             {
-                if (hit.collider.gameObject.tag == "Item0")
+                if (hit.collider.transform.parent.gameObject.tag == "Item0")
                 {
                     Destroy(gameObject);
                     Selling.checkedItems++;

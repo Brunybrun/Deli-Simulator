@@ -3275,7 +3275,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Sandwiches Left:'
+  m_text: 'Sandwiches Done:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3341,7 +3341,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -166.82175, w: -1.4586182}
+  m_margin: {x: 0, y: 0, z: -201.26678, w: -1.4586182}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4362,9 +4362,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Selling
   item:
-  - {fileID: 1745054329545357105, guid: bbe791e419948aa4dbe6e3f2e0afe006, type: 3}
-  - {fileID: 8956111466492540744, guid: 0379fc8d00593b744a6a991ad6e28de1, type: 3}
-  - {fileID: 4812320798206744704, guid: d4f384a00511aa14288f57bd762d4789, type: 3}
+  - {fileID: 6509117682684435206, guid: 8b4ff1c52e05cc449a0503c844dfa7ad, type: 3}
+  - {fileID: 2964104611202131588, guid: 0bc4199ccb42a3c49ac82aba9da94e9e, type: 3}
+  - {fileID: 7436216654880257629, guid: 4c9f13347f3cb1b4798da310cca06ea3, type: 3}
+  - {fileID: 2895127502528823966, guid: d64050cebf33abf409ccdf9764ceb86c, type: 3}
+  - {fileID: 8698314267608481582, guid: b3de593bc3ca28e4397a59a386e6c472, type: 3}
+  - {fileID: 3741702188146070717, guid: e8a8348ed4303f54da4c4b490dde0dae, type: 3}
+  - {fileID: 8731086184274589706, guid: 5c54d819d9cc46342883d8387852ceeb, type: 3}
+  - {fileID: 1157894731162456146, guid: 066a275c61582b64bbae689d7c8f3a90, type: 3}
+  - {fileID: 362024280448482661, guid: 1287f880de2e7f64b9a2d4b7cace6ce0, type: 3}
+  - {fileID: 1125040703413447061, guid: 2928d8dc49f0aa14ca3ca156d407247d, type: 3}
   customers:
   - {fileID: 4541628284112591675, guid: 0d8cdf4ef868c174cadf57408c3566c3, type: 3}
   - {fileID: 1763563702803536651, guid: 41803cef887691a4fbe78029a0dd95fa, type: 3}
@@ -5246,7 +5253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -494.9, y: 514.5}
+  m_AnchoredPosition: {x: -462.2, y: 514.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2077813792
