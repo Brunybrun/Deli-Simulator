@@ -6,7 +6,7 @@ public class Selling : MonoBehaviour
     public static float itemTimer = 1f;
     public float itemTimeLeft = itemTimer;
     private bool go = true;
-    public int totalItems = 2;
+    public static int totalItems = 3;
     public static int checkedItems = 0;
 
     void Start()
@@ -29,11 +29,15 @@ public class Selling : MonoBehaviour
                     x2 = Random.Range(0, item.Length);
                 }
                 Vector3 randomItemSpawn2 = new Vector3(Random.Range(10.6f, 13.3f), 1.075f, Random.Range(-3.749f, -3.222f));
-                //int x3 = Random.Range(0, item.Length);
-                //Vector3 randomItemSpawn3 = new Vector3(Random.Range(10.6f, 13.3f), 1.075f, Random.Range(-3.749f, -3.222f));
+                int x3 = Random.Range(0, item.Length);
+                while (x1 == x3 || x2 == x3)
+                {
+                    x3 = Random.Range(0, item.Length);
+                }
+                Vector3 randomItemSpawn3 = new Vector3(Random.Range(10.6f, 13.3f), 1.075f, Random.Range(-3.749f, -3.222f));
                 Instantiate(item[x1], randomItemSpawn1, Quaternion.identity);
                 Instantiate(item[x2], randomItemSpawn2, Quaternion.identity);
-                //Instantiate(item[x3], randomItemSpawn3, Quaternion.identity);
+                Instantiate(item[x3], randomItemSpawn3, Quaternion.identity);
                 itemTimeLeft = 1f;
                 go = false;
             }
