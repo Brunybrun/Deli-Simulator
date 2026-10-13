@@ -12,13 +12,13 @@ public class EggFried : MonoBehaviour
         {
             if (Physics.Raycast(FirstPersonMovement.Eyes.transform.position, FirstPersonMovement.Eyes.transform.forward, out RaycastHit hit, 2))
             {
-                Debug.Log(hit.collider.gameObject.tag);
                 if (hit.collider.transform.parent.gameObject.tag == "Cooked")
                 {
                     Destroy(transform.parent.gameObject);
                     GameManager.eggTimeLeft = GameManager.eggTimer;
                     Cooking.spawnEgg = true;
                     Cooking.spawn_s_egg = true;
+                    Cooking.spawnCheese++;
                 }
             }
         }
