@@ -12,6 +12,7 @@ public class item0 : MonoBehaviour
                 {
                     Destroy(gameObject);
                     Selling.checkedItems++;
+                    GameManager.moneyMade += 0.5f;
                 }
             }
         }
@@ -20,6 +21,7 @@ public class item0 : MonoBehaviour
             Destroy(gameObject);
             Selling.go = true;
             Selling.checkedItems = 0;
+            GameManager.moneyMade -= 1;
         }
     }
 }

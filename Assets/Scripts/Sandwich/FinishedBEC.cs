@@ -13,6 +13,8 @@ public class FinishedBEC : MonoBehaviour
                 {
                     GameManager.sandwichDone = false;
                     Cooking.spawnUnfinSandwich = true;
+                    GameManager.sandwichesDone++;
+                    GameManager.moneyMade += 6;
                     Destroy(gameObject);
                 }
             }

@@ -18,10 +18,13 @@ public class GameManager : MonoBehaviour
     public static Vector3 target2 = new Vector3(2, 0.5f, 2);
     public static Vector3 target3 = new Vector3(5, 0.5f, -3);
     public static int sandwichesDone = 0;
+    public static float moneyMade = 0;
     [SerializeField] TextMeshProUGUI sandwichNum;
+    [SerializeField] TextMeshProUGUI moneyAmount;
 
     void Update()
     {
         sandwichNum.text = sandwichesDone.ToString();
+        moneyAmount.text = moneyMade.ToString();
     }
 }
