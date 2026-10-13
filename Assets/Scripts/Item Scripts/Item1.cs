@@ -2,13 +2,6 @@ using UnityEngine;
 
 public class Item1 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -21,6 +14,12 @@ public class Item1 : MonoBehaviour
                     Selling.checkedItems++;
                 }
             }
+        }
+        else if (Selling.customerSpawn == true)
+        {
+            Destroy(gameObject);
+            Selling.go = true;
+            Selling.checkedItems = 0;
         }
     }
 }

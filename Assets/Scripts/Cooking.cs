@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class Cooking : MonoBehaviour
 {
+    //Game Objects
     public GameObject bacon;
     public GameObject egg;
     public GameObject sandwich;
     public GameObject unfinSandwich;
     public GameObject s_bacon;
     public GameObject s_egg;
+
+    //Checks
     public static bool spawnBacon = true;
     public static bool spawnEgg = true;
     public static int spawnCheese = 0;
@@ -54,6 +57,7 @@ public class Cooking : MonoBehaviour
             }
         }
 
+        //The cheese is only allowed to spawn once a piece of bacon and egg have been cooked
         if (spawnCheese == 2)
         {
             if (Input.GetMouseButtonDown(0))
@@ -73,6 +77,7 @@ public class Cooking : MonoBehaviour
             }
         }
 
+        //Spawns in two pieces of bread to look like a sandwich in progress
         if (spawnUnfinSandwich)
         {
             Vector3 unFinSandwichSpawn = new Vector3(4.928f, 0.433f, -7.236f);
@@ -99,6 +104,7 @@ public class Cooking : MonoBehaviour
             }
         }
 
+        //These if statements are to spawn bacon and eggs on top of the bread on the counter
         if (spawn_s_bacon)
         {
             Vector3 s_baconSpawn = new Vector3(5.066f, 0.56f, -7.089f);
