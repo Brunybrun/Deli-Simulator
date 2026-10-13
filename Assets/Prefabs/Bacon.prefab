@@ -1808,6 +1808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e67001320932d4cac48acb94c4900a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cooked
+  s_bacon: {fileID: 654697389878211809, guid: 0bf027e9bfec00649845a4799b05f510, type: 3}
 --- !u!1 &8087381029430008558
 GameObject:
   m_ObjectHideFlags: 0

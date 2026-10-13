@@ -1,14 +1,8 @@
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class Cooked : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (GameManager.baconTimeLeft <= 0)
@@ -25,6 +19,7 @@ public class Cooked : MonoBehaviour
                     Destroy(transform.parent.gameObject);
                     GameManager.baconTimeLeft = GameManager.baconTimer;
                     Cooking.spawnBacon = true;
+                    Cooking.spawn_s_bacon = true;
                 }
             }
         }

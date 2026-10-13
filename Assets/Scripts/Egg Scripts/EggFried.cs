@@ -2,13 +2,6 @@ using UnityEngine;
 
 public class EggFried : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (GameManager.eggTimeLeft <= 0)
@@ -25,6 +18,7 @@ public class EggFried : MonoBehaviour
                     Destroy(transform.parent.gameObject);
                     GameManager.eggTimeLeft = GameManager.eggTimer;
                     Cooking.spawnEgg = true;
+                    Cooking.spawn_s_egg = true;
                 }
             }
         }

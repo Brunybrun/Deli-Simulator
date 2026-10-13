@@ -4,12 +4,15 @@ public class Cooking : MonoBehaviour
 {
     public GameObject bacon;
     public GameObject egg;
+    public GameObject cheese;
+    public GameObject s_bacon;
+    public GameObject s_egg;
     public static bool spawnBacon = true;
     public static bool spawnEgg = true;
-    void Start()
-    {
-
-    }
+    public static bool spawnCheese = false;
+    public static bool spawn_s_bacon = false;
+    public static bool spawn_s_egg = false;
+    public static bool spawn_s_cheese = false;
 
     void Update()
     {
@@ -57,7 +60,6 @@ public class Cooking : MonoBehaviour
             if (GameManager.baconTimeLeft > 0)
             {
                 GameManager.baconTimeLeft -= Time.deltaTime;
-                Debug.Log(GameManager.baconTimeLeft);
             }
         }
 
@@ -67,8 +69,20 @@ public class Cooking : MonoBehaviour
             if (GameManager.eggTimeLeft > 0)
             {
                 GameManager.eggTimeLeft -= Time.deltaTime;
-                Debug.Log(GameManager.eggTimeLeft);
             }
+        }
+
+        if (spawn_s_bacon)
+        {
+            Vector3 s_baconSpawn = new Vector3(5.066f, 0.56f, -7.089f);
+            Instantiate(s_bacon, s_baconSpawn, Quaternion.identity);
+            spawn_s_bacon = false;
+        }
+        if (spawn_s_egg)
+        {
+            Vector3 s_eggSpawn = new Vector3(4.973f, 0.497f, -7.139f);
+            Instantiate(s_egg, s_eggSpawn, Quaternion.identity);
+            spawn_s_egg = false;
         }
     }
 }
