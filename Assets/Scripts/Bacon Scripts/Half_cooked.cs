@@ -11,7 +11,7 @@ public class Half_cooked : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.baconTimeLeft <= 20f)
+        if (GameManager.baconTimeLeft <= 15f)
         {
             Destroy(gameObject);
         }

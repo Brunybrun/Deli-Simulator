@@ -7,9 +7,9 @@ public class Selling : MonoBehaviour
     public GameObject[] customers;
 
     //Timers
-    public static float itemTimer = 1f;
+    public static float itemTimer = 3f;
     public float itemTimeLeft = itemTimer;
-    public static float customerTimer = 5f;
+    public static float customerTimer = 10f;
     public static float customerTimeLeft = customerTimer;
 
     //Checks
@@ -18,11 +18,6 @@ public class Selling : MonoBehaviour
     public static int totalItems = 3;
     public static int checkedItems = 0;
     public static bool changeCustomer = false;
-
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
@@ -56,7 +51,7 @@ public class Selling : MonoBehaviour
                 Instantiate(item[x2], randomItemSpawn2, Quaternion.identity);
                 Instantiate(item[x3], randomItemSpawn3, Quaternion.identity);
 
-                itemTimeLeft = 1f;
+                itemTimeLeft = itemTimer;
                 customerSpawn = false;
                 go = false;
             }

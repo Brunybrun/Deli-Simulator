@@ -9,7 +9,7 @@ public class Uncooked : MonoBehaviour
 
     void Update()
     {
-        if(GameManager.baconTimeLeft <= 25f)
+        if(GameManager.baconTimeLeft <= 30f)
         {
             Destroy(gameObject);
         }

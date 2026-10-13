@@ -9,9 +9,9 @@ public class GameManager : MonoBehaviour
     public static int AiSpeed = 2;
     public static float timeLength = 2f;
     public static bool move = true;
-    public static float baconTimer = 30f;
+    public static float baconTimer = 40f;
     public static float baconTimeLeft = baconTimer;
-    public static float eggTimer = 30f;
+    public static float eggTimer = 25f;
     public static float eggTimeLeft = eggTimer;
     public static bool sandwichDone = false;
     public static Vector3 target1 = new Vector3(10, 0.5f, 6);
@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public static Vector3 target3 = new Vector3(5, 0.5f, -3);
     public static int sandwichesDone = 0;
     public static float moneyMade = 0;
+    public static float gameTime = 300f;
     [SerializeField] TextMeshProUGUI sandwichNum;
     [SerializeField] TextMeshProUGUI moneyAmount;
 

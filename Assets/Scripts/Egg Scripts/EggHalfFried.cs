@@ -11,7 +11,7 @@ public class EggHalfFried : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.eggTimeLeft <= 20f)
+        if (GameManager.eggTimeLeft <= 10f)
         {
             Destroy(gameObject);
         }

@@ -11,7 +11,7 @@ public class EggRaw : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.eggTimeLeft <= 25f)
+        if (GameManager.eggTimeLeft <= 20f)
         {
             Destroy(gameObject);
         }
